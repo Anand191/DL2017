@@ -10,13 +10,13 @@ import tensorflow as tf
 import numpy as np
 
 # Default constants
-LEARNING_RATE_DEFAULT = 2e-3
+LEARNING_RATE_DEFAULT = 1e-3 #deg=fault given was 2e-3
 WEIGHT_REGULARIZER_STRENGTH_DEFAULT = 0.
 WEIGHT_INITIALIZATION_SCALE_DEFAULT = 1e-4
 BATCH_SIZE_DEFAULT = 200
 MAX_STEPS_DEFAULT = 1500
 DROPOUT_RATE_DEFAULT = 0.
-DNN_HIDDEN_UNITS_DEFAULT = '100,200'
+DNN_HIDDEN_UNITS_DEFAULT = '100,200' #deg=fault given was 100
 WEIGHT_INITIALIZATION_DEFAULT = 'normal'
 WEIGHT_REGULARIZER_DEFAULT = 'l2'
 ACTIVATION_DEFAULT = 'relu'
@@ -90,7 +90,7 @@ def train():
   
   n_in = 32*32*3
   n_out = 10
-  tbatch = 1001
+  tbatch = 1000
   
   mlp = MLP(n_hidden = dnn_hidden_units,n_classes=10,is_training=True)
   x = tf.placeholder(tf.float32, [None, n_in])
@@ -103,19 +103,33 @@ def train():
    
   with tf.Session() as sess:
       tf.local_variables_initializer().run()
-      tf.global_variables_initializer().run()      
-      for i in range(tbatch):
-          X, Y = cifar10.train.next_batch(BATCH_SIZE_DEFAULT)
-          X = np.reshape(X,(X.shape[0],n_in))          
-          opt,ls,train_acc = sess.run([optimizer,cross_loss,acc],feed_dict={x: X, y: Y})
-          #optimizer.run(feed_dict={x: X, y: Y})
-          if(i%100==0):
-              print('step %d, training accuracy %g' % (i, train_acc))
+      tf.global_variables_initializer().run()
+      for epoch in range(25):
+          #avg_cost = 0.
+          #avg_acc = 0.
+          print ("Begin Epoch {}".format(epoch+1))
+          for i in range(tbatch):
+              X, Y = cifar10.train.next_batch(BATCH_SIZE_DEFAULT)
+              X = np.reshape(X,(X.shape[0],n_in))          
+              opt,ls,train_acc = sess.run([optimizer,cross_loss,acc],feed_dict={x: X, y: Y})
+
+              #avg_cost += ls/tbatch
+              #avg_acc += train_acc/tbatch
+              if(i%200==0):
+                  print("No. of steps remaining in this epoch = {}".format(tbatch-i))
+          Xtr,Ytr = cifar10.train.next_batch(50000)
+          Xtr = np.reshape(Xtr,(Xtr.shape[0],n_in))
+          avg_acc = acc.eval(feed_dict={x: Xtr, y: Ytr})
+          if(epoch%1==0):
+              print('step %d,training accuracy =  %g' % (epoch+1, avg_acc))
+    
       
+      print("training finished!!!")
       Xt, Yt = cifar10.test.images, cifar10.test.labels
       Xt = np.reshape(Xt,(Xt.shape[0],n_in)) 
       print('test accuracy %g' % acc.eval(feed_dict={
             x: Xt, y: Yt}))
+      
               
       
     
