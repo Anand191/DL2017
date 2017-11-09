@@ -13,10 +13,10 @@ import numpy as np
 LEARNING_RATE_DEFAULT = 1e-3 #deg=fault given was 2e-3
 WEIGHT_REGULARIZER_STRENGTH_DEFAULT = 0.
 WEIGHT_INITIALIZATION_SCALE_DEFAULT = 1e-4
-BATCH_SIZE_DEFAULT = 200
+BATCH_SIZE_DEFAULT = 100
 MAX_STEPS_DEFAULT = 1500
 DROPOUT_RATE_DEFAULT = 0.
-DNN_HIDDEN_UNITS_DEFAULT = '100,200' #deg=fault given was 100
+DNN_HIDDEN_UNITS_DEFAULT = '128,256' #deg=fault given was 100
 WEIGHT_INITIALIZATION_DEFAULT = 'normal'
 WEIGHT_REGULARIZER_DEFAULT = 'l2'
 ACTIVATION_DEFAULT = 'relu'
@@ -90,7 +90,7 @@ def train():
   
   n_in = 32*32*3
   n_out = 10
-  tbatch = 1000
+  tbatch = 500
   
   mlp = MLP(n_hidden = dnn_hidden_units,n_classes=10,is_training=True)
   x = tf.placeholder(tf.float32, [None, n_in])
@@ -100,11 +100,14 @@ def train():
   cross_loss = mlp.loss(logits,y)
   optimizer = mlp.train_step(cross_loss,LEARNING_RATE_DEFAULT)
   acc = mlp.accuracy(logits,y)
+  
+  Xtr,Ytr = cifar10.train.next_batch(50000)
+  Xtr = np.reshape(Xtr,(Xtr.shape[0],n_in))
    
   with tf.Session() as sess:
       tf.local_variables_initializer().run()
       tf.global_variables_initializer().run()
-      for epoch in range(25):
+      for epoch in range(55):
           #avg_cost = 0.
           #avg_acc = 0.
           print ("Begin Epoch {}".format(epoch+1))
@@ -115,10 +118,9 @@ def train():
 
               #avg_cost += ls/tbatch
               #avg_acc += train_acc/tbatch
-              if(i%200==0):
+              if(i%100==0):
                   print("No. of steps remaining in this epoch = {}".format(tbatch-i))
-          Xtr,Ytr = cifar10.train.next_batch(50000)
-          Xtr = np.reshape(Xtr,(Xtr.shape[0],n_in))
+          
           avg_acc = acc.eval(feed_dict={x: Xtr, y: Ytr})
           if(epoch%1==0):
               print('step %d,training accuracy =  %g' % (epoch+1, avg_acc))
@@ -130,18 +132,6 @@ def train():
       print('test accuracy %g' % acc.eval(feed_dict={
             x: Xt, y: Yt}))
       
-              
-      
-    
-# =============================================================================
-#   ########################
-#   # PUT YOUR CODE HERE  #
-#   #######################
-#   raise NotImplementedError
-#   ########################
-#   # END OF YOUR CODE    #
-#   #######################
-# =============================================================================
 
 def print_flags():
   """

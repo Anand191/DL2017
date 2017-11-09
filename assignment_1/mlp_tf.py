@@ -20,7 +20,7 @@ class MLP(object):
   def __init__(self, n_hidden, n_classes, is_training,
                activation_fn = tf.nn.relu, dropout_rate = 0.,
                weight_initializer = xavier_initializer(),
-               weight_regularizer = l2_regularizer(0.001)):
+               weight_regularizer = l2_regularizer(0.01)):
     """
     Constructor for an MLP object. Default values should be used as hints for
     the usage of each parameter.
@@ -95,16 +95,18 @@ class MLP(object):
             w = tf.get_variable(
                 'w',
                 [input.get_shape()[1], output_dim],
-                initializer=tf.random_normal_initializer(stddev=stddev)
+                initializer=self.weight_initializer,
+                regularizer = self.weight_regularizer
             )
             b = tf.get_variable(
                 'b',
                 [output_dim],
-                initializer=tf.constant_initializer(0.0)
+                initializer=self.weight_initializer
             )
             return tf.matmul(input, w) + b
         
     def fcn(input,h_dim,out_dim):
+        #inp = tf.nn.relu(input,'ni')
         h0 = tf.nn.relu(linear(input,h_dim[0],'n0'))
         h1 = tf.nn.relu(linear(h0,h_dim[1],'n1'))
         out = linear(h1,out_dim,'nout')
