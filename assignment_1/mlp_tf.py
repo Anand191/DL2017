@@ -88,36 +88,85 @@ class MLP(object):
              network. These logits can then be used with loss and accuracy
              to evaluate the model.
     """
-    n_input = tf.shape(x)[1]
-    weights = {
-    'h1': tf.Variable(tf.random_normal([n_input, self.n_hidden[0]])),
-    'h2': tf.Variable(tf.random_normal([self.n_hidden[0], self.n_hidden[1]])),
-    'out': tf.Variable(tf.random_normal([self.n_hidden[1], self.n_classes]))
-    }
-    biases = {
-    'b1': tf.Variable(tf.random_normal([self.n_hidden[0]])),
-    'b2': tf.Variable(tf.random_normal([self.n_hidden[1]])),
-    'out': tf.Variable(tf.random_normal([self.n_classes]))
-}
-    # Hidden fully connected layer with 256 neurons
-    layer_1 = tf.add(tf.matmul(x, weights['h1']), biases['b1'])
+    #n_input = x.get_shape()[1].value
     
-    # Hidden fully connected layer with 256 neurons
-    layer_2 = tf.add(tf.matmul(layer_1, weights['h2']), biases['b2'])
-    
-    # Output fully connected layer with a neuron for each class
-    logits = tf.matmul(layer_2, weights['out']) + biases['out']
-    
+    def linear(input, output_dim, scope=None, stddev=1.0):
+        with tf.variable_scope(scope or 'linear'):
+            w = tf.get_variable(
+                'w',
+                [input.get_shape()[1], output_dim],
+                initializer=tf.random_normal_initializer(stddev=stddev)
+            )
+            b = tf.get_variable(
+                'b',
+                [output_dim],
+                initializer=tf.constant_initializer(0.0)
+            )
+            return tf.matmul(input, w) + b
+        
+    def fcn(input,h_dim,out_dim):
+        h0 = tf.nn.relu(linear(input,h_dim[0],'n0'))
+        h1 = tf.nn.relu(linear(h0,h_dim[1],'n1'))
+        out = linear(h1,out_dim,'nout')
+        return(out)
+        
+# =============================================================================
+#     def weight_var(shape):
+#         initial = tf.truncated_normal(shape, stddev=0.1)
+#         return tf.Variable(initial)
+#     
+#     def bias_var(shape):
+#         #initial = tf.constant(0.1, shape=shape)
+#         initial = tf.random_normal(shape, stddev=0.1)
+#         return tf.Variable(initial)
+#     
+#     def fc(x,w,b):
+#         return (tf.add(tf.matmul(x, w),b))
+# =============================================================================
+# =============================================================================
+#     def mlp(x,weights,biases):
+#         layer_1 = tf.add(tf.matmul(x, weights['h1']), biases['b1'])
+#         layer_1 = tf.nn.relu(layer_1)
+#         
+#         layer_2 = tf.add(tf.matmul(layer_1, weights['h2']), biases['b2'])
+#         layer_2 = tf.nn.relu(layer_2)
+#         
+#         out_layer = tf.matmul(layer_2, weights['out']) + biases['out']
+#         
+#         return (out_layer)       
+#         
+#         
+#     n_input = x.get_shape()[1].value
+#     weights = {
+#     'h1': tf.Variable(tf.random_normal([n_input, self.n_hidden[0]])),
+#     'h2': tf.Variable(tf.random_normal([self.n_hidden[0], self.n_hidden[1]])),
+#     'out': tf.Variable(tf.random_normal([self.n_hidden[1], self.n_classes]))
+#     }
+#     biases = {
+#     'b1': tf.Variable(tf.random_normal([self.n_hidden[0]])),
+#     'b2': tf.Variable(tf.random_normal([self.n_hidden[1]])),
+#     'out': tf.Variable(tf.random_normal([self.n_classes]))
+#     }
+# =============================================================================
 
 # =============================================================================
-#     ########################
-#     # PUT YOUR CODE HERE  #
-#     #######################
-#     raise NotImplementedError
-#     ########################
-#     # END OF YOUR CODE    #
-#     #######################
+#     w1 = weight_var([n_input,self.n_hidden[0]])
+#     b1 = bias_var([self.n_hidden[0]])
+#     layer_1 = fc(x,w1,b1)
+#     layer_1 = tf.nn.relu(layer_1)
+#         
+# 
+#     w2 = weight_var([self.n_hidden[0],self.n_hidden[1]])
+#     b2 = bias_var([self.n_hidden[1]])
+#     layer_2 = fc(layer_1,w2,b2)
+#     layer_2 = tf.nn.relu(layer_2)
+#     
+#      
+#     w_o = weight_var([self.n_hidden[1],self.n_classes])
+#     b_o = bias_var([self.n_classes])
+#     logits = fc(layer_2,w_o,b_o)
 # =============================================================================
+    logits = fcn(x,self.n_hidden,self.n_classes)
 
     return logits
 
@@ -143,14 +192,18 @@ class MLP(object):
     Returns:
       loss: scalar float Tensor, full loss = cross_entropy + reg_loss
     """
+    cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels = labels, logits = logits)
+    loss = tf.reduce_mean(cross_entropy)
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+# =============================================================================
+#     ########################
+#     # PUT YOUR CODE HERE  #
+#     #######################
+#     raise NotImplementedError
+#     ########################
+#     # END OF YOUR CODE    #
+#     #######################
+# =============================================================================
 
     return loss
 
@@ -164,14 +217,17 @@ class MLP(object):
     Returns:
       train_step: TensorFlow operation to perform one training step
     """
+    train_step = tf.train.AdamOptimizer(learning_rate=flags).minimize(loss)
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+# =============================================================================
+#     ########################
+#     # PUT YOUR CODE HERE  #
+#     #######################
+#     raise NotImplementedError
+#     ########################
+#     # END OF YOUR CODE    #
+#     #######################
+# =============================================================================
 
     return train_step
 
@@ -193,13 +249,18 @@ class MLP(object):
       accuracy: scalar float Tensor, the accuracy of predictions,
                 i.e. the average correct predictions over the whole batch.
     """
+    pred = tf.nn.softmax(logits)
+    correct_prediction = tf.equal(tf.argmax(pred, 1), tf.argmax(labels, 1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
-
+# =============================================================================
+#     ########################
+#     # PUT YOUR CODE HERE  #
+#     #######################
+#     raise NotImplementedError
+#     ########################
+#     # END OF YOUR CODE    #
+#     #######################
+# 
+# =============================================================================
     return accuracy
