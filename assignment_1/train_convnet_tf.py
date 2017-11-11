@@ -95,11 +95,9 @@ def train():
               if(i%100==0):
                   print("No. of steps remaining in this epoch = {}".format(tbatch-i))
           
-# =============================================================================
-#           avg_acc = acc.eval(feed_dict={x: Xval, y: Yval})
-#           if(epoch%1==0):
-#               print('step %d,training accuracy =  %g' % (epoch+1, avg_acc))
-# =============================================================================      
+          avg_acc = acc.eval(feed_dict={x: Xval, y: Yval})
+          if(epoch%1==0):
+              print('step %d,training accuracy =  %g' % (epoch+1, avg_acc))
       print("training finished!!!")
       bat1_acc = acc.eval(feed_dict={x: Xt1, y:Yt1})
       bat2_acc = acc.eval(feed_dict={x: Xt2, y:Yt2})
