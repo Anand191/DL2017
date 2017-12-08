@@ -1,0 +1,535 @@
+Initialize dataset with 540241 characters, 87 unique.
+input shape=[None, None, 87]
+logits shape = [None, 30, 87]
+probabilities shape=[None, 87]
+predictions shape=[None]
+[2017-11-28 19:18] Train Step 0001/25000, Batch Size = 64, Examples/Sec = 170.03, Loss = 4.467348098754883,Accuracy = 0.01197916641831398
+D[[[,UwUUUGGGGUGa$$$$$$$$$$C$
+[2017-11-28 19:18] Train Step 0101/25000, Batch Size = 64, Examples/Sec = 1198.57, Loss = 3.4441030025482178,Accuracy = 0.17499999701976776
+                             
+[2017-11-28 19:18] Train Step 0201/25000, Batch Size = 64, Examples/Sec = 1270.03, Loss = 3.0536916255950928,Accuracy = 0.17656250298023224
+                             
+[2017-11-28 19:19] Train Step 0301/25000, Batch Size = 64, Examples/Sec = 816.06, Loss = 2.3528294563293457,Accuracy = 0.33906251192092896
+ the the the the the the the 
+[2017-11-28 19:19] Train Step 0401/25000, Batch Size = 64, Examples/Sec = 1348.66, Loss = 2.063856363296509,Accuracy = 0.40833333134651184
+ the was the was the was the 
+[2017-11-28 19:19] Train Step 0501/25000, Batch Size = 64, Examples/Sec = 1116.87, Loss = 1.962906002998352,Accuracy = 0.42135417461395264
+ the was the was the was the 
+[2017-11-28 19:19] Train Step 0601/25000, Batch Size = 64, Examples/Sec = 1043.98, Loss = 1.8851948976516724,Accuracy = 0.44999998807907104
+nd the was the was the was th
+[2017-11-28 19:19] Train Step 0701/25000, Batch Size = 64, Examples/Sec = 1056.99, Loss = 1.8731714487075806,Accuracy = 0.4713541567325592
+t the said the said the said 
+[2017-11-28 19:19] Train Step 0801/25000, Batch Size = 64, Examples/Sec = 1343.11, Loss = 1.7448413372039795,Accuracy = 0.49166667461395264
+ the stold the stold the stol
+[2017-11-28 19:19] Train Step 0901/25000, Batch Size = 64, Examples/Sec = 1119.97, Loss = 1.6946192979812622,Accuracy = 0.503125011920929
+the was so the word and said 
+[2017-11-28 19:19] Train Step 1001/25000, Batch Size = 64, Examples/Sec = 1109.47, Loss = 1.6627476215362549,Accuracy = 0.4958333373069763
+lled the said, ‘I will not th
+[2017-11-28 19:19] Train Step 1101/25000, Batch Size = 64, Examples/Sec = 477.60, Loss = 1.7141339778900146,Accuracy = 0.5041666626930237
+ The said, ‘I will not the st
+[2017-11-28 19:20] Train Step 1201/25000, Batch Size = 64, Examples/Sec = 1309.74, Loss = 1.6158058643341064,Accuracy = 0.5145833492279053
+ said the window the window t
+[2017-11-28 19:20] Train Step 1301/25000, Batch Size = 64, Examples/Sec = 1339.95, Loss = 1.6054558753967285,Accuracy = 0.5223958492279053
+ The stream and took the wold
+[2017-11-28 19:20] Train Step 1401/25000, Batch Size = 64, Examples/Sec = 1336.81, Loss = 1.6725623607635498,Accuracy = 0.5041666626930237
+ and was a son the said, ‘I w
+[2017-11-28 19:20] Train Step 1501/25000, Batch Size = 64, Examples/Sec = 1346.59, Loss = 1.6015262603759766,Accuracy = 0.518750011920929
+ The solden was son a stream 
+[2017-11-28 19:20] Train Step 1601/25000, Batch Size = 64, Examples/Sec = 1303.63, Loss = 1.4520264863967896,Accuracy = 0.5572916865348816
+ the strange of the strange o
+[2017-11-28 19:20] Train Step 1701/25000, Batch Size = 64, Examples/Sec = 1341.02, Loss = 1.5095027685165405,Accuracy = 0.5494791865348816
+e the work with the window, a
+[2017-11-28 19:20] Train Step 1801/25000, Batch Size = 64, Examples/Sec = 1337.11, Loss = 1.4890884160995483,Accuracy = 0.5453125238418579
+ the second was so must done 
+[2017-11-28 19:20] Train Step 1901/25000, Batch Size = 64, Examples/Sec = 1349.90, Loss = 1.44711434841156,Accuracy = 0.557812511920929
+hen the sextain of the sext o
+[2017-11-28 19:20] Train Step 2001/25000, Batch Size = 64, Examples/Sec = 1344.69, Loss = 1.4222263097763062,Accuracy = 0.565625011920929
+ent of the window, and the se
+[2017-11-28 19:20] Train Step 2101/25000, Batch Size = 64, Examples/Sec = 1349.93, Loss = 1.4378759860992432,Accuracy = 0.5651041865348816
+ood should not go out of the 
+[2017-11-28 19:20] Train Step 2201/25000, Batch Size = 64, Examples/Sec = 1345.73, Loss = 1.3648655414581299,Accuracy = 0.582812488079071
+ the world and said: ‘I will 
+[2017-11-28 19:20] Train Step 2301/25000, Batch Size = 64, Examples/Sec = 1341.41, Loss = 1.4642360210418701,Accuracy = 0.5489583611488342
+nd said: ‘I will should not s
+[2017-11-28 19:21] Train Step 2401/25000, Batch Size = 64, Examples/Sec = 1349.97, Loss = 1.3807270526885986,Accuracy = 0.5760416388511658
+hen they were she was so much
+[2017-11-28 19:21] Train Step 2501/25000, Batch Size = 64, Examples/Sec = 1347.50, Loss = 1.4498348236083984,Accuracy = 0.5562499761581421
+ was a while, and the wolf wa
+[2017-11-28 19:21] Train Step 2601/25000, Batch Size = 64, Examples/Sec = 1340.23, Loss = 1.3233994245529175,Accuracy = 0.5953124761581421
+he stood and said, ‘I will go
+[2017-11-28 19:21] Train Step 2701/25000, Batch Size = 64, Examples/Sec = 1343.10, Loss = 1.4156185388565063,Accuracy = 0.5739583373069763
+ The mouse the boy was so muc
+[2017-11-28 19:21] Train Step 2801/25000, Batch Size = 64, Examples/Sec = 1350.82, Loss = 1.3411046266555786,Accuracy = 0.5932291746139526
+ the sexton were so much the 
+[2017-11-28 19:21] Train Step 2901/25000, Batch Size = 64, Examples/Sec = 1354.31, Loss = 1.3790161609649658,Accuracy = 0.5723958611488342
+uickly to the stars was so so
+[2017-11-28 19:21] Train Step 3001/25000, Batch Size = 64, Examples/Sec = 1338.42, Loss = 1.37897527217865,Accuracy = 0.573437511920929
+hen the first was so much a l
+[2017-11-28 19:21] Train Step 3101/25000, Batch Size = 64, Examples/Sec = 1353.52, Loss = 1.3406823873519897,Accuracy = 0.5953124761581421
+or she was so sorrowfully wer
+[2017-11-28 19:21] Train Step 3201/25000, Batch Size = 64, Examples/Sec = 1349.13, Loss = 1.3539515733718872,Accuracy = 0.5874999761581421
+I will give him the bear to t
+[2017-11-28 19:21] Train Step 3301/25000, Batch Size = 64, Examples/Sec = 1347.78, Loss = 1.330707311630249,Accuracy = 0.589062511920929
+ THE THE BORD AND THE THE BOR
+[2017-11-28 19:21] Train Step 3401/25000, Batch Size = 64, Examples/Sec = 1345.69, Loss = 1.321975827217102,Accuracy = 0.5822916626930237
+EN THE WORL TO THE WORL TO TH
+[2017-11-28 19:21] Train Step 3501/25000, Batch Size = 64, Examples/Sec = 1345.74, Loss = 1.3346023559570312,Accuracy = 0.5885416865348816
+e him a little castle, and th
+[2017-11-28 19:22] Train Step 3601/25000, Batch Size = 64, Examples/Sec = 1343.30, Loss = 1.3359512090682983,Accuracy = 0.5802083611488342
+d the fire the second of the 
+[2017-11-28 19:22] Train Step 3701/25000, Batch Size = 64, Examples/Sec = 1335.79, Loss = 1.3328683376312256,Accuracy = 0.590624988079071
+an was so her father and said
+[2017-11-28 19:22] Train Step 3801/25000, Batch Size = 64, Examples/Sec = 1356.24, Loss = 1.3726314306259155,Accuracy = 0.5901041626930237
+ou shall be a little man was 
+[2017-11-28 19:22] Train Step 3901/25000, Batch Size = 64, Examples/Sec = 1309.02, Loss = 1.3549668788909912,Accuracy = 0.5822916626930237
+ou shall not go out of the wo
+[2017-11-28 19:22] Train Step 4001/25000, Batch Size = 64, Examples/Sec = 1355.42, Loss = 1.304613471031189,Accuracy = 0.6005208492279053
+ow what he was the second sti
+[2017-11-28 19:22] Train Step 4101/25000, Batch Size = 64, Examples/Sec = 1356.08, Loss = 1.3285279273986816,Accuracy = 0.5838541388511658
+ to the fire to see the secon
+[2017-11-28 19:22] Train Step 4201/25000, Batch Size = 64, Examples/Sec = 1354.02, Loss = 1.2204912900924683,Accuracy = 0.6119791865348816
+’ ‘I will go to the way and t
+[2017-11-28 19:22] Train Step 4301/25000, Batch Size = 64, Examples/Sec = 1321.45, Loss = 1.3216873407363892,Accuracy = 0.5921875238418579
+e the soldier was so more the
+[2017-11-28 19:22] Train Step 4401/25000, Batch Size = 64, Examples/Sec = 1344.41, Loss = 1.3644458055496216,Accuracy = 0.5958333611488342
+e servant was so much the sec
+[2017-11-28 19:22] Train Step 4501/25000, Batch Size = 64, Examples/Sec = 1319.75, Loss = 1.275247573852539,Accuracy = 0.6114583611488342
+ ‘What a man was so much the 
+[2017-11-28 19:22] Train Step 4601/25000, Batch Size = 64, Examples/Sec = 1321.57, Loss = 1.3277995586395264,Accuracy = 0.5994791388511658
+ery day the sease and said: ‘
+[2017-11-28 19:22] Train Step 4701/25000, Batch Size = 64, Examples/Sec = 1342.28, Loss = 1.2452247142791748,Accuracy = 0.612500011920929
+ to the work in the world, an
+[2017-11-28 19:23] Train Step 4801/25000, Batch Size = 64, Examples/Sec = 1336.82, Loss = 1.2776198387145996,Accuracy = 0.6067708134651184
+hen the second straight to hi
+[2017-11-28 19:23] Train Step 4901/25000, Batch Size = 64, Examples/Sec = 1344.25, Loss = 1.2503937482833862,Accuracy = 0.6130208373069763
+ THE SAVEN THE FOUR AND THE S
+[2017-11-28 19:23] Train Step 5001/25000, Batch Size = 64, Examples/Sec = 1351.06, Loss = 1.3329378366470337,Accuracy = 0.6005208492279053
+e seashout stones and said: ‘
+[2017-11-28 19:23] Train Step 5101/25000, Batch Size = 64, Examples/Sec = 1349.59, Loss = 1.2981877326965332,Accuracy = 0.6026041507720947
+ore the woodman was so much t
+[2017-11-28 19:23] Train Step 5201/25000, Batch Size = 64, Examples/Sec = 1328.76, Loss = 1.3123241662979126,Accuracy = 0.6026041507720947
+ she was the world went to th
+[2017-11-28 19:23] Train Step 5301/25000, Batch Size = 64, Examples/Sec = 1350.12, Loss = 1.2666850090026855,Accuracy = 0.6098958253860474
+ the tree of the wood, and th
+[2017-11-28 19:23] Train Step 5401/25000, Batch Size = 64, Examples/Sec = 1344.69, Loss = 1.3235323429107666,Accuracy = 0.590624988079071
+ould not go away and the fire
+[2017-11-28 19:23] Train Step 5501/25000, Batch Size = 64, Examples/Sec = 1340.07, Loss = 1.3112046718597412,Accuracy = 0.609375
+e the castle of the water, an
+[2017-11-28 19:23] Train Step 5601/25000, Batch Size = 64, Examples/Sec = 1352.65, Loss = 1.2513147592544556,Accuracy = 0.6067708134651184
+ she was to be a great beauti
+[2017-11-28 19:23] Train Step 5701/25000, Batch Size = 64, Examples/Sec = 1345.93, Loss = 1.2436152696609497,Accuracy = 0.6078125238418579
+e and said: ‘I am sure and sa
+[2017-11-28 19:23] Train Step 5801/25000, Batch Size = 64, Examples/Sec = 1344.34, Loss = 1.2059967517852783,Accuracy = 0.6130208373069763
+ the second son and the secon
+[2017-11-28 19:23] Train Step 5901/25000, Batch Size = 64, Examples/Sec = 1345.87, Loss = 1.1973910331726074,Accuracy = 0.6223958134651184
+The second straw to the golde
+[2017-11-28 19:24] Train Step 6001/25000, Batch Size = 64, Examples/Sec = 1352.95, Loss = 1.258306860923767,Accuracy = 0.612500011920929
+’ said the man was so much to
+[2017-11-28 19:24] Train Step 6101/25000, Batch Size = 64, Examples/Sec = 1333.60, Loss = 1.2228715419769287,Accuracy = 0.625
+o the strength of the world, 
+[2017-11-28 19:24] Train Step 6201/25000, Batch Size = 64, Examples/Sec = 1340.92, Loss = 1.279791235923767,Accuracy = 0.6067708134651184
+e and said, ‘What do you will
+[2017-11-28 19:24] Train Step 6301/25000, Batch Size = 64, Examples/Sec = 1343.08, Loss = 1.2426012754440308,Accuracy = 0.6156250238418579
+h the gold woman was so much 
+[2017-11-28 19:24] Train Step 6401/25000, Batch Size = 64, Examples/Sec = 1341.00, Loss = 1.21372652053833,Accuracy = 0.6260416507720947
+o he said to himself and said
+[2017-11-28 19:24] Train Step 6501/25000, Batch Size = 64, Examples/Sec = 1348.85, Loss = 1.2315351963043213,Accuracy = 0.6192708611488342
+uite and said, ‘I will take h
+[2017-11-28 19:24] Train Step 6601/25000, Batch Size = 64, Examples/Sec = 1333.85, Loss = 1.2609713077545166,Accuracy = 0.596875011920929
+ was a little tailor, and sai
+[2017-11-28 19:24] Train Step 6701/25000, Batch Size = 64, Examples/Sec = 1338.98, Loss = 1.2313951253890991,Accuracy = 0.614062488079071
+e carter was so much the prin
+[2017-11-28 19:24] Train Step 6801/25000, Batch Size = 64, Examples/Sec = 1313.62, Loss = 1.273323655128479,Accuracy = 0.6036458611488342
+he forest and said, ‘I will g
+[2017-11-28 19:24] Train Step 6901/25000, Batch Size = 64, Examples/Sec = 1341.49, Loss = 1.212735652923584,Accuracy = 0.6177083253860474
+nd the first was to be a grea
+[2017-11-28 19:24] Train Step 7001/25000, Batch Size = 64, Examples/Sec = 1346.28, Loss = 1.1904826164245605,Accuracy = 0.6354166865348816
+ THE VALIANT LITTLE KIDS
+
+The
+[2017-11-28 19:24] Train Step 7101/25000, Batch Size = 64, Examples/Sec = 1340.91, Loss = 1.2468445301055908,Accuracy = 0.621874988079071
+ust the second still and the 
+[2017-11-28 19:25] Train Step 7201/25000, Batch Size = 64, Examples/Sec = 1340.82, Loss = 1.1477065086364746,Accuracy = 0.6380208134651184
+le that she was so much to se
+[2017-11-28 19:25] Train Step 7301/25000, Batch Size = 64, Examples/Sec = 1350.22, Loss = 1.2203192710876465,Accuracy = 0.6291666626930237
+ the world, the second son wa
+[2017-11-28 19:25] Train Step 7401/25000, Batch Size = 64, Examples/Sec = 1318.70, Loss = 1.2286068201065063,Accuracy = 0.6192708611488342
+the second son she was the se
+[2017-11-28 19:25] Train Step 7501/25000, Batch Size = 64, Examples/Sec = 1345.13, Loss = 1.1451293230056763,Accuracy = 0.6390625238418579
+ TO THE FOUR AND THE STORY TO
+[2017-11-28 19:25] Train Step 7601/25000, Batch Size = 64, Examples/Sec = 1339.30, Loss = 1.2579864263534546,Accuracy = 0.609375
+hen the wolf said to him, ‘I 
+[2017-11-28 19:25] Train Step 7701/25000, Batch Size = 64, Examples/Sec = 1336.66, Loss = 1.2335090637207031,Accuracy = 0.6135416626930237
+’ ‘I do not stay the seashore
+[2017-11-28 19:25] Train Step 7801/25000, Batch Size = 64, Examples/Sec = 1343.36, Loss = 1.2166508436203003,Accuracy = 0.6187499761581421
+the seashore and said, ‘The w
+[2017-11-28 19:25] Train Step 7901/25000, Batch Size = 64, Examples/Sec = 1330.86, Loss = 1.2390942573547363,Accuracy = 0.6098958253860474
+ will soon she was so sorrowf
+[2017-11-28 19:25] Train Step 8001/25000, Batch Size = 64, Examples/Sec = 1349.29, Loss = 1.2076942920684814,Accuracy = 0.6177083253860474
+’ ‘I will give him a little c
+[2017-11-28 19:25] Train Step 8101/25000, Batch Size = 64, Examples/Sec = 1351.99, Loss = 1.2281172275543213,Accuracy = 0.6166666746139526
+e was so much to be a beautif
+[2017-11-28 19:25] Train Step 8201/25000, Batch Size = 64, Examples/Sec = 1335.35, Loss = 1.210793375968933,Accuracy = 0.6244791746139526
+the work is to the world to s
+[2017-11-28 19:25] Train Step 8301/25000, Batch Size = 64, Examples/Sec = 1345.47, Loss = 1.2231467962265015,Accuracy = 0.6255208253860474
+ will be a great fat been at 
+[2017-11-28 19:25] Train Step 8401/25000, Batch Size = 64, Examples/Sec = 1337.56, Loss = 1.232331395149231,Accuracy = 0.6161458492279053
+he was so sorrowful than the 
+[2017-11-28 19:26] Train Step 8501/25000, Batch Size = 64, Examples/Sec = 1350.14, Loss = 1.240020513534546,Accuracy = 0.6286458373069763
+roject Gutenberg-tm License t
+[2017-11-28 19:26] Train Step 8601/25000, Batch Size = 64, Examples/Sec = 1346.03, Loss = 1.1737579107284546,Accuracy = 0.6307291388511658
+at-skin and said: ‘It is not 
+[2017-11-28 19:26] Train Step 8701/25000, Batch Size = 64, Examples/Sec = 650.40, Loss = 1.1952321529388428,Accuracy = 0.6312500238418579
+ut the woman was so much to t
+[2017-11-28 19:26] Train Step 8801/25000, Batch Size = 64, Examples/Sec = 1354.61, Loss = 1.1916815042495728,Accuracy = 0.6234375238418579
+near with the work is to the 
+[2017-11-28 19:26] Train Step 8901/25000, Batch Size = 64, Examples/Sec = 1349.79, Loss = 1.2048723697662354,Accuracy = 0.6114583611488342
+ and the soldier was so much 
+[2017-11-28 19:26] Train Step 9001/25000, Batch Size = 64, Examples/Sec = 1335.97, Loss = 1.1424859762191772,Accuracy = 0.6401041746139526
+ donations to see the grass o
+[2017-11-28 19:26] Train Step 9101/25000, Batch Size = 64, Examples/Sec = 1339.72, Loss = 1.2309508323669434,Accuracy = 0.6057291626930237
+hen the fish was so sorrowful
+[2017-11-28 19:26] Train Step 9201/25000, Batch Size = 64, Examples/Sec = 1353.29, Loss = 1.2273399829864502,Accuracy = 0.6031249761581421
+o the carter was so much the 
+[2017-11-28 19:26] Train Step 9301/25000, Batch Size = 64, Examples/Sec = 1342.69, Loss = 1.2235398292541504,Accuracy = 0.6244791746139526
+            THE WHITE WENT OF
+[2017-11-28 19:26] Train Step 9401/25000, Batch Size = 64, Examples/Sec = 1349.41, Loss = 1.1955695152282715,Accuracy = 0.6369791626930237
+u have a little man was all t
+[2017-11-28 19:26] Train Step 9501/25000, Batch Size = 64, Examples/Sec = 1352.00, Loss = 1.185421109199524,Accuracy = 0.6348958611488342
+’ ‘Then she was so much the s
+[2017-11-28 19:26] Train Step 9601/25000, Batch Size = 64, Examples/Sec = 1350.04, Loss = 1.0953086614608765,Accuracy = 0.6640625
+ne when the soldier was so mu
+[2017-11-28 19:27] Train Step 9701/25000, Batch Size = 64, Examples/Sec = 1340.86, Loss = 1.165276050567627,Accuracy = 0.6458333134651184
+ and the wolf said: ‘I have b
+[2017-11-28 19:27] Train Step 9801/25000, Batch Size = 64, Examples/Sec = 1342.42, Loss = 1.2209957838058472,Accuracy = 0.6213541626930237
+ THAT THE GOLDEN GOOSE
+
+There
+[2017-11-28 19:27] Train Step 9901/25000, Batch Size = 64, Examples/Sec = 1348.59, Loss = 1.1392481327056885,Accuracy = 0.6536458134651184
+ueen to the world when the ma
+[2017-11-28 19:27] Train Step 10001/25000, Batch Size = 64, Examples/Sec = 1347.30, Loss = 1.2130699157714844,Accuracy = 0.6244791746139526
+ and the man was to be a grea
+[2017-11-28 19:27] Train Step 10101/25000, Batch Size = 64, Examples/Sec = 1318.96, Loss = 1.2057240009307861,Accuracy = 0.6208333373069763
+nd said: ‘I will give you the
+[2017-11-28 19:27] Train Step 10201/25000, Batch Size = 64, Examples/Sec = 1343.52, Loss = 1.2038625478744507,Accuracy = 0.629687488079071
+ng to the three times and sai
+[2017-11-28 19:27] Train Step 10301/25000, Batch Size = 64, Examples/Sec = 1345.72, Loss = 1.1420825719833374,Accuracy = 0.6520833373069763
+ow to the first thought to hi
+[2017-11-28 19:27] Train Step 10401/25000, Batch Size = 64, Examples/Sec = 1350.34, Loss = 1.177059531211853,Accuracy = 0.6223958134651184
+ ‘What do you want to be a fe
+[2017-11-28 19:27] Train Step 10501/25000, Batch Size = 64, Examples/Sec = 1341.63, Loss = 1.1497060060501099,Accuracy = 0.6401041746139526
+ow and said: ‘I will go to th
+[2017-11-28 19:27] Train Step 10601/25000, Batch Size = 64, Examples/Sec = 1336.26, Loss = 1.1853591203689575,Accuracy = 0.6322916746139526
+uickly on the street the seve
+[2017-11-28 19:27] Train Step 10701/25000, Batch Size = 64, Examples/Sec = 1351.42, Loss = 1.1727311611175537,Accuracy = 0.6307291388511658
+  The second bride, and the s
+[2017-11-28 19:27] Train Step 10801/25000, Batch Size = 64, Examples/Sec = 1344.87, Loss = 1.1364699602127075,Accuracy = 0.6416666507720947
+e the work is a great dear ch
+[2017-11-28 19:28] Train Step 10901/25000, Batch Size = 64, Examples/Sec = 1358.48, Loss = 1.1051799058914185,Accuracy = 0.6421874761581421
+ not the work is the streets,
+[2017-11-28 19:28] Train Step 11001/25000, Batch Size = 64, Examples/Sec = 1022.27, Loss = 1.1539407968521118,Accuracy = 0.6484375
+ow we have been a stone to se
+[2017-11-28 19:28] Train Step 11101/25000, Batch Size = 64, Examples/Sec = 1346.83, Loss = 1.1994432210922241,Accuracy = 0.6255208253860474
+ng the stairs, and the cat sa
+[2017-11-28 19:28] Train Step 11201/25000, Batch Size = 64, Examples/Sec = 1348.68, Loss = 1.1277626752853394,Accuracy = 0.6473958492279053
+ the second son said: ‘I will
+[2017-11-28 19:28] Train Step 11301/25000, Batch Size = 64, Examples/Sec = 1275.14, Loss = 1.1857346296310425,Accuracy = 0.6270833611488342
+ap, and said: ‘I have seen th
+[2017-11-28 19:28] Train Step 11401/25000, Batch Size = 64, Examples/Sec = 1341.52, Loss = 1.1578357219696045,Accuracy = 0.6442708373069763
+ the stream, and the mother s
+[2017-11-28 19:28] Train Step 11501/25000, Batch Size = 64, Examples/Sec = 1354.54, Loss = 1.164610505104065,Accuracy = 0.6234375238418579
+he fish said, ‘I am so that t
+[2017-11-28 19:28] Train Step 11601/25000, Batch Size = 64, Examples/Sec = 1340.94, Loss = 1.165062427520752,Accuracy = 0.6411458253860474
+ the cook was so fast as the 
+[2017-11-28 19:28] Train Step 11701/25000, Batch Size = 64, Examples/Sec = 1343.36, Loss = 1.238766074180603,Accuracy = 0.6213541626930237
+d the servant went to the fox
+[2017-11-28 19:28] Train Step 11801/25000, Batch Size = 64, Examples/Sec = 1349.55, Loss = 1.197925090789795,Accuracy = 0.6197916865348816
+ow that it was to be put into
+[2017-11-28 19:28] Train Step 11901/25000, Batch Size = 64, Examples/Sec = 1348.12, Loss = 1.2367079257965088,Accuracy = 0.6239583492279053
+ as she was so much to be a g
+[2017-11-28 19:28] Train Step 12001/25000, Batch Size = 64, Examples/Sec = 1330.40, Loss = 1.0951992273330688,Accuracy = 0.6526041626930237
+ the moon came to the ground.
+[2017-11-28 19:29] Train Step 12101/25000, Batch Size = 64, Examples/Sec = 1344.93, Loss = 1.1590384244918823,Accuracy = 0.6260416507720947
+.E.  INger of the water, and 
+[2017-11-28 19:29] Train Step 12201/25000, Batch Size = 64, Examples/Sec = 1334.34, Loss = 1.1502152681350708,Accuracy = 0.6354166865348816
+The king had the way of the w
+[2017-11-28 19:29] Train Step 12301/25000, Batch Size = 64, Examples/Sec = 1338.74, Loss = 1.1595969200134277,Accuracy = 0.629687488079071
+or the stars, and said, ‘What
+[2017-11-28 19:29] Train Step 12401/25000, Batch Size = 64, Examples/Sec = 1343.44, Loss = 1.1461989879608154,Accuracy = 0.651562511920929
+ the castle who had been stil
+[2017-11-28 19:29] Train Step 12501/25000, Batch Size = 64, Examples/Sec = 1346.76, Loss = 1.1302530765533447,Accuracy = 0.6552083492279053
+orrow went to the forest, and
+[2017-11-28 19:29] Train Step 12601/25000, Batch Size = 64, Examples/Sec = 1309.88, Loss = 1.163076400756836,Accuracy = 0.6286458373069763
+ the wolf was so much to the 
+[2017-11-28 19:29] Train Step 12701/25000, Batch Size = 64, Examples/Sec = 1341.92, Loss = 1.1551971435546875,Accuracy = 0.6395833492279053
+one and said: ‘I will give yo
+[2017-11-28 19:29] Train Step 12801/25000, Batch Size = 64, Examples/Sec = 1360.21, Loss = 1.1156957149505615,Accuracy = 0.6473958492279053
+ THE SEVEN RAVENSTILTSKIN
+
+Th
+[2017-11-28 19:29] Train Step 12901/25000, Batch Size = 64, Examples/Sec = 1334.39, Loss = 1.0657740831375122,Accuracy = 0.6604166626930237
+uickly and said, ‘I am not th
+[2017-11-28 19:29] Train Step 13001/25000, Batch Size = 64, Examples/Sec = 1334.04, Loss = 1.1220041513442993,Accuracy = 0.6442708373069763
+ the second son she was so mu
+[2017-11-28 19:29] Train Step 13101/25000, Batch Size = 64, Examples/Sec = 1345.34, Loss = 1.102146863937378,Accuracy = 0.6630208492279053
+he second companion to the gr
+[2017-11-28 19:29] Train Step 13201/25000, Batch Size = 64, Examples/Sec = 1335.20, Loss = 1.1435678005218506,Accuracy = 0.645312488079071
+The man was so much that the 
+[2017-11-28 19:30] Train Step 13301/25000, Batch Size = 64, Examples/Sec = 1341.92, Loss = 1.138549566268921,Accuracy = 0.6463541388511658
+ THE FOUR THE BEAR
+
+There was
+[2017-11-28 19:30] Train Step 13401/25000, Batch Size = 64, Examples/Sec = 1347.98, Loss = 1.099393367767334,Accuracy = 0.6401041746139526
+the second son said: ‘I will 
+[2017-11-28 19:30] Train Step 13501/25000, Batch Size = 64, Examples/Sec = 1353.49, Loss = 1.117652416229248,Accuracy = 0.643750011920929
+’ said the man, ‘that is the 
+[2017-11-28 19:30] Train Step 13601/25000, Batch Size = 64, Examples/Sec = 1337.76, Loss = 1.1129456758499146,Accuracy = 0.6578124761581421
+ the world was a sorrowful th
+[2017-11-28 19:30] Train Step 13701/25000, Batch Size = 64, Examples/Sec = 1348.22, Loss = 1.1203848123550415,Accuracy = 0.6489583253860474
+d the third day the stars, an
+[2017-11-28 19:30] Train Step 13801/25000, Batch Size = 64, Examples/Sec = 1352.24, Loss = 1.1212553977966309,Accuracy = 0.6479166746139526
+e to the forest, and the sold
+[2017-11-28 19:30] Train Step 13901/25000, Batch Size = 64, Examples/Sec = 1355.73, Loss = 1.169299602508545,Accuracy = 0.6291666626930237
+ow the bear said: ‘I will giv
+[2017-11-28 19:30] Train Step 14001/25000, Batch Size = 64, Examples/Sec = 1341.71, Loss = 1.148908019065857,Accuracy = 0.6380208134651184
+t the second sons were so muc
+[2017-11-28 19:30] Train Step 14101/25000, Batch Size = 64, Examples/Sec = 1347.42, Loss = 1.1262791156768799,Accuracy = 0.6463541388511658
+ the second son said to him: 
+[2017-11-28 19:30] Train Step 14201/25000, Batch Size = 64, Examples/Sec = 1342.94, Loss = 1.1489876508712769,Accuracy = 0.6307291388511658
+ and as he was so much to be 
+[2017-11-28 19:30] Train Step 14301/25000, Batch Size = 64, Examples/Sec = 1352.45, Loss = 1.139325499534607,Accuracy = 0.6473958492279053
+ The ansked for the castle, a
+[2017-11-28 19:30] Train Step 14401/25000, Batch Size = 64, Examples/Sec = 1352.59, Loss = 1.1141247749328613,Accuracy = 0.6463541388511658
+ The second still said, ‘Who 
+[2017-11-28 19:31] Train Step 14501/25000, Batch Size = 64, Examples/Sec = 1351.50, Loss = 1.1617462635040283,Accuracy = 0.6338541507720947
+e was a great fat before the 
+[2017-11-28 19:31] Train Step 14601/25000, Batch Size = 64, Examples/Sec = 1353.00, Loss = 1.1348724365234375,Accuracy = 0.6338541507720947
+retel should be done to his w
+[2017-11-28 19:31] Train Step 14701/25000, Batch Size = 64, Examples/Sec = 1327.36, Loss = 1.0919880867004395,Accuracy = 0.659375011920929
+ will soon find the stairs, a
+[2017-11-28 19:31] Train Step 14801/25000, Batch Size = 64, Examples/Sec = 1349.59, Loss = 1.1656657457351685,Accuracy = 0.6442708373069763
+ will soon see what he was to
+[2017-11-28 19:31] Train Step 14901/25000, Batch Size = 64, Examples/Sec = 1335.97, Loss = 1.1282203197479248,Accuracy = 0.6479166746139526
+at-skin was a great fat beaut
+[2017-11-28 19:31] Train Step 15001/25000, Batch Size = 64, Examples/Sec = 1342.37, Loss = 1.1330418586730957,Accuracy = 0.6411458253860474
+ and the world was so much to
+[2017-11-28 19:31] Train Step 15101/25000, Batch Size = 64, Examples/Sec = 1342.63, Loss = 1.0983566045761108,Accuracy = 0.6635416746139526
+reamer that they were all tha
+[2017-11-28 19:31] Train Step 15201/25000, Batch Size = 64, Examples/Sec = 1351.04, Loss = 1.0796455144882202,Accuracy = 0.640625
+ the stables to be a beautifu
+[2017-11-28 19:31] Train Step 15301/25000, Batch Size = 64, Examples/Sec = 1347.38, Loss = 1.125007152557373,Accuracy = 0.651562511920929
+ow what he was to be able to 
+[2017-11-28 19:31] Train Step 15401/25000, Batch Size = 64, Examples/Sec = 1320.34, Loss = 1.1096974611282349,Accuracy = 0.6567708253860474
+d the second son said to her 
+[2017-11-28 19:31] Train Step 15501/25000, Batch Size = 64, Examples/Sec = 1347.21, Loss = 1.1006332635879517,Accuracy = 0.6416666507720947
+uickly on the stairs, and the
+[2017-11-28 19:31] Train Step 15601/25000, Batch Size = 64, Examples/Sec = 1344.95, Loss = 1.1054264307022095,Accuracy = 0.6552083492279053
+ow at once and the sound of t
+[2017-11-28 19:32] Train Step 15701/25000, Batch Size = 64, Examples/Sec = 1341.02, Loss = 1.1077698469161987,Accuracy = 0.6510416865348816
+ the stars, and said, ‘I have
+[2017-11-28 19:32] Train Step 15801/25000, Batch Size = 64, Examples/Sec = 1126.54, Loss = 1.1149183511734009,Accuracy = 0.6499999761581421
+the wood to the castle, and t
+[2017-11-28 19:32] Train Step 15901/25000, Batch Size = 64, Examples/Sec = 1353.62, Loss = 1.1680200099945068,Accuracy = 0.6265624761581421
+ ‘Have you learnt him after h
+[2017-11-28 19:32] Train Step 16001/25000, Batch Size = 64, Examples/Sec = 1346.90, Loss = 1.0881075859069824,Accuracy = 0.65625
+nest of the work in the same 
+[2017-11-28 19:32] Train Step 16101/25000, Batch Size = 64, Examples/Sec = 1341.43, Loss = 1.1164889335632324,Accuracy = 0.651562511920929
+e the second son more manner 
+[2017-11-28 19:32] Train Step 16201/25000, Batch Size = 64, Examples/Sec = 1351.03, Loss = 1.1271427869796753,Accuracy = 0.6510416865348816
+o and the man was to be a gre
+[2017-11-28 19:32] Train Step 16301/25000, Batch Size = 64, Examples/Sec = 1348.99, Loss = 1.0956310033798218,Accuracy = 0.660937488079071
+the castle which they saw the
+[2017-11-28 19:32] Train Step 16401/25000, Batch Size = 64, Examples/Sec = 1347.53, Loss = 1.1378493309020996,Accuracy = 0.6416666507720947
+ow I will give you a little o
+[2017-11-28 19:32] Train Step 16501/25000, Batch Size = 64, Examples/Sec = 1350.88, Loss = 1.1387429237365723,Accuracy = 0.6390625238418579
+ and the soldier was all the 
+[2017-11-28 19:32] Train Step 16601/25000, Batch Size = 64, Examples/Sec = 1353.79, Loss = 1.1620919704437256,Accuracy = 0.6364583373069763
+e was so much that they were 
+[2017-11-28 19:32] Train Step 16701/25000, Batch Size = 64, Examples/Sec = 1356.65, Loss = 1.090885043144226,Accuracy = 0.6583333611488342
+.E.1.  The little tailor was 
+[2017-11-28 19:32] Train Step 16801/25000, Batch Size = 64, Examples/Sec = 1347.42, Loss = 1.1122950315475464,Accuracy = 0.6411458253860474
+ LIABLED-BED AND THE BEAN
+
+Th
+[2017-11-28 19:33] Train Step 16901/25000, Batch Size = 64, Examples/Sec = 1343.21, Loss = 1.1204479932785034,Accuracy = 0.6390625238418579
+ectronic works to be as you c
+[2017-11-28 19:33] Train Step 17001/25000, Batch Size = 64, Examples/Sec = 1350.60, Loss = 1.025824785232544,Accuracy = 0.6739583611488342
+ said the fisherman, ‘that is
+[2017-11-28 19:33] Train Step 17101/25000, Batch Size = 64, Examples/Sec = 1338.34, Loss = 1.1117017269134521,Accuracy = 0.6432291865348816
+ the work in the morning the 
+[2017-11-28 19:33] Train Step 17201/25000, Batch Size = 64, Examples/Sec = 1317.86, Loss = 1.123813509941101,Accuracy = 0.6494791507720947
+ou shall be a fine thing to b
+[2017-11-28 19:33] Train Step 17301/25000, Batch Size = 64, Examples/Sec = 1337.31, Loss = 1.1464073657989502,Accuracy = 0.6442708373069763
+oy at the door of the water, 
+[2017-11-28 19:33] Train Step 17401/25000, Batch Size = 64, Examples/Sec = 1343.45, Loss = 1.0884805917739868,Accuracy = 0.6645833253860474
+ the wolf was so far that the
+[2017-11-28 19:33] Train Step 17501/25000, Batch Size = 64, Examples/Sec = 1351.50, Loss = 1.057402491569519,Accuracy = 0.6776041388511658
+as so much that the dog said,
+[2017-11-28 19:33] Train Step 17601/25000, Batch Size = 64, Examples/Sec = 1347.26, Loss = 1.1158260107040405,Accuracy = 0.6489583253860474
+ow the princess was so much t
+[2017-11-28 19:33] Train Step 17701/25000, Batch Size = 64, Examples/Sec = 1328.46, Loss = 1.1240692138671875,Accuracy = 0.659375011920929
+nes that they were so that th
+[2017-11-28 19:33] Train Step 17801/25000, Batch Size = 64, Examples/Sec = 1345.21, Loss = 1.162482500076294,Accuracy = 0.6369791626930237
+on and the work in the mornin
+[2017-11-28 19:33] Train Step 17901/25000, Batch Size = 64, Examples/Sec = 1347.10, Loss = 1.0859237909317017,Accuracy = 0.6583333611488342
+’ Then he went out to the kin
+[2017-11-28 19:33] Train Step 18001/25000, Batch Size = 64, Examples/Sec = 1352.78, Loss = 1.0930689573287964,Accuracy = 0.645312488079071
+reamer to see the world, and 
+[2017-11-28 19:33] Train Step 18101/25000, Batch Size = 64, Examples/Sec = 1352.22, Loss = 1.0753108263015747,Accuracy = 0.6572916507720947
+utenberg-tm License when the 
+[2017-11-28 19:34] Train Step 18201/25000, Batch Size = 64, Examples/Sec = 1347.74, Loss = 1.1582955121994019,Accuracy = 0.640625
+ and said: ‘I am not the worl
+[2017-11-28 19:34] Train Step 18301/25000, Batch Size = 64, Examples/Sec = 1298.99, Loss = 1.1032721996307373,Accuracy = 0.6494791507720947
+hen the second time the son s
+[2017-11-28 19:34] Train Step 18401/25000, Batch Size = 64, Examples/Sec = 1348.47, Loss = 1.0769715309143066,Accuracy = 0.6677083373069763
+ and the bird had a little ta
+[2017-11-28 19:34] Train Step 18501/25000, Batch Size = 64, Examples/Sec = 1348.26, Loss = 1.1093943119049072,Accuracy = 0.6578124761581421
+ did not come back to the for
+[2017-11-28 19:34] Train Step 18601/25000, Batch Size = 64, Examples/Sec = 1343.76, Loss = 1.0753672122955322,Accuracy = 0.6692708134651184
+I do not take care to the for
+[2017-11-28 19:34] Train Step 18701/25000, Batch Size = 64, Examples/Sec = 1349.74, Loss = 1.1159851551055908,Accuracy = 0.6499999761581421
+oy at the door, and the secon
+[2017-11-28 19:34] Train Step 18801/25000, Batch Size = 64, Examples/Sec = 1341.66, Loss = 1.1177524328231812,Accuracy = 0.6484375
+ Werily, ‘she has been the do
+[2017-11-28 19:34] Train Step 18901/25000, Batch Size = 64, Examples/Sec = 1333.05, Loss = 1.1243572235107422,Accuracy = 0.640625
+e was so sorrowful that the m
+[2017-11-28 19:34] Train Step 19001/25000, Batch Size = 64, Examples/Sec = 591.39, Loss = 1.118717908859253,Accuracy = 0.6401041746139526
+ured not wretch enough you a 
+[2017-11-28 19:34] Train Step 19101/25000, Batch Size = 64, Examples/Sec = 1356.62, Loss = 1.112960696220398,Accuracy = 0.6526041626930237
+ the window, and said, ‘I wil
+[2017-11-28 19:34] Train Step 19201/25000, Batch Size = 64, Examples/Sec = 1350.77, Loss = 1.0864046812057495,Accuracy = 0.6583333611488342
+.  The next day the straw the
+[2017-11-28 19:34] Train Step 19301/25000, Batch Size = 64, Examples/Sec = 1348.79, Loss = 1.1021615266799927,Accuracy = 0.645312488079071
+ansel, who had seen the tree 
+[2017-11-28 19:35] Train Step 19401/25000, Batch Size = 64, Examples/Sec = 1344.77, Loss = 1.1312443017959595,Accuracy = 0.6385416388511658
+ect Gutenberg-tm electronic w
+[2017-11-28 19:35] Train Step 19501/25000, Batch Size = 64, Examples/Sec = 1342.88, Loss = 1.123760461807251,Accuracy = 0.6427083611488342
+the castle was a great but on
+[2017-11-28 19:35] Train Step 19601/25000, Batch Size = 64, Examples/Sec = 1350.56, Loss = 1.1302350759506226,Accuracy = 0.6364583373069763
+ the second to see him and sa
+[2017-11-28 19:35] Train Step 19701/25000, Batch Size = 64, Examples/Sec = 1334.93, Loss = 1.1047362089157104,Accuracy = 0.6604166626930237
+on the second son were so muc
+[2017-11-28 19:35] Train Step 19801/25000, Batch Size = 64, Examples/Sec = 1340.72, Loss = 1.1469368934631348,Accuracy = 0.6421874761581421
+ery old woman who was so thir
+[2017-11-28 19:35] Train Step 19901/25000, Batch Size = 64, Examples/Sec = 1349.21, Loss = 1.0835423469543457,Accuracy = 0.6572916507720947
+ and the straw there they wer
+[2017-11-28 19:35] Train Step 20001/25000, Batch Size = 64, Examples/Sec = 1337.20, Loss = 1.0853527784347534,Accuracy = 0.6442708373069763
+
+
+The mother said: ‘I will sh
+[2017-11-28 19:35] Train Step 20101/25000, Batch Size = 64, Examples/Sec = 1338.49, Loss = 1.073049783706665,Accuracy = 0.6578124761581421
+or him, and the soldier was s
+[2017-11-28 19:35] Train Step 20201/25000, Batch Size = 64, Examples/Sec = 1344.18, Loss = 1.0837891101837158,Accuracy = 0.6510416865348816
+ENT DISTRIBUTE AND RISING ENS
+[2017-11-28 19:35] Train Step 20301/25000, Batch Size = 64, Examples/Sec = 1341.10, Loss = 1.0972751379013062,Accuracy = 0.6604166626930237
+ ‘I will give you the sound o
+[2017-11-28 19:35] Train Step 20401/25000, Batch Size = 64, Examples/Sec = 1349.24, Loss = 1.056789755821228,Accuracy = 0.6661458611488342
+’ ‘Oh, no!’ said the fisherma
+[2017-11-28 19:35] Train Step 20501/25000, Batch Size = 64, Examples/Sec = 1350.50, Loss = 1.0449910163879395,Accuracy = 0.6604166626930237
+e a beautiful bird am I!’
+
+An
+[2017-11-28 19:36] Train Step 20601/25000, Batch Size = 64, Examples/Sec = 1355.10, Loss = 1.129140853881836,Accuracy = 0.6489583253860474
+e a short times and said: ‘I 
+[2017-11-28 19:36] Train Step 20701/25000, Batch Size = 64, Examples/Sec = 1344.77, Loss = 1.1925885677337646,Accuracy = 0.6322916746139526
+t the wolf was to be a castle
+[2017-11-28 19:36] Train Step 20801/25000, Batch Size = 64, Examples/Sec = 1351.38, Loss = 1.0958969593048096,Accuracy = 0.6588541865348816
+ ‘Have you a little white dov
+[2017-11-28 19:36] Train Step 20901/25000, Batch Size = 64, Examples/Sec = 1318.23, Loss = 1.1246790885925293,Accuracy = 0.6364583373069763
+staired the sound of the worl
+[2017-11-28 19:36] Train Step 21001/25000, Batch Size = 64, Examples/Sec = 1345.88, Loss = 1.06304132938385,Accuracy = 0.6635416746139526
+or where the second princess 
+[2017-11-28 19:36] Train Step 21101/25000, Batch Size = 64, Examples/Sec = 1346.76, Loss = 1.1251519918441772,Accuracy = 0.6463541388511658
+tree or not.’ ‘Yes,’ said the
+[2017-11-28 19:36] Train Step 21201/25000, Batch Size = 64, Examples/Sec = 1328.83, Loss = 1.1267147064208984,Accuracy = 0.651562511920929
+o not this time the wolf was 
+[2017-11-28 19:36] Train Step 21301/25000, Batch Size = 64, Examples/Sec = 1338.89, Loss = 1.0503802299499512,Accuracy = 0.660937488079071
+ the stairs, and the soldier 
+[2017-11-28 19:36] Train Step 21401/25000, Batch Size = 64, Examples/Sec = 1337.74, Loss = 1.0996712446212769,Accuracy = 0.6604166626930237
+d the mother said, ‘I will go
+[2017-11-28 19:36] Train Step 21501/25000, Batch Size = 64, Examples/Sec = 1349.05, Loss = 1.0441478490829468,Accuracy = 0.6682291626930237
+ed her head out of the water 
+[2017-11-28 19:36] Train Step 21601/25000, Batch Size = 64, Examples/Sec = 1341.28, Loss = 1.0676579475402832,Accuracy = 0.6463541388511658
+y will be a carter who was th
+[2017-11-28 19:36] Train Step 21701/25000, Batch Size = 64, Examples/Sec = 1343.97, Loss = 1.1124367713928223,Accuracy = 0.6473958492279053
+d the wolf said: ‘I have been
+[2017-11-28 19:37] Train Step 21801/25000, Batch Size = 64, Examples/Sec = 1336.04, Loss = 1.0604215860366821,Accuracy = 0.6604166626930237
+t the cow was to be done, and
+[2017-11-28 19:37] Train Step 21901/25000, Batch Size = 64, Examples/Sec = 1349.51, Loss = 1.1243642568588257,Accuracy = 0.6395833492279053
+oundation to the fox said: ‘I
+[2017-11-28 19:37] Train Step 22001/25000, Batch Size = 64, Examples/Sec = 1340.02, Loss = 1.100009799003601,Accuracy = 0.6484375
+ection, and the cook heard th
+[2017-11-28 19:37] Train Step 22101/25000, Batch Size = 64, Examples/Sec = 1344.54, Loss = 1.1089404821395874,Accuracy = 0.6484375
+uickly, and said, ‘I will giv
+[2017-11-28 19:37] Train Step 22201/25000, Batch Size = 64, Examples/Sec = 1336.36, Loss = 1.0885852575302124,Accuracy = 0.6630208492279053
+ WHISE AND THE SEVEN LITTLE T
+[2017-11-28 19:37] Train Step 22301/25000, Batch Size = 64, Examples/Sec = 1343.25, Loss = 1.0773367881774902,Accuracy = 0.6583333611488342
+R KNOWELL
+     THE TURNIP
+   
+[2017-11-28 19:37] Train Step 22401/25000, Batch Size = 64, Examples/Sec = 1348.10, Loss = 1.05789315700531,Accuracy = 0.660937488079071
+he second straight on the gro
+[2017-11-28 19:37] Train Step 22501/25000, Batch Size = 64, Examples/Sec = 1353.92, Loss = 1.055039882659912,Accuracy = 0.6619791388511658
+ the work was so beautiful th
+[2017-11-28 19:37] Train Step 22601/25000, Batch Size = 64, Examples/Sec = 1339.54, Loss = 1.0662086009979248,Accuracy = 0.6635416746139526
+ THE BIDEN
+
+There was once a 
+[2017-11-28 19:37] Train Step 22701/25000, Batch Size = 64, Examples/Sec = 1346.74, Loss = 1.0707355737686157,Accuracy = 0.6630208492279053
+ED ROBBER BRIDEGROOM
+
+There w
+[2017-11-28 19:37] Train Step 22801/25000, Batch Size = 64, Examples/Sec = 1349.10, Loss = 1.0370956659317017,Accuracy = 0.667187511920929
+ans.’ ‘Oh, you shall soon fin
+[2017-11-28 19:37] Train Step 22901/25000, Batch Size = 64, Examples/Sec = 1340.48, Loss = 1.046845555305481,Accuracy = 0.6729166507720947
+he man went to the wood, and 
+[2017-11-28 19:38] Train Step 23001/25000, Batch Size = 64, Examples/Sec = 1352.80, Loss = 1.1203831434249878,Accuracy = 0.6510416865348816
+ TO OW HANS IN LUCK
+     THE 
+[2017-11-28 19:38] Train Step 23101/25000, Batch Size = 64, Examples/Sec = 1339.30, Loss = 1.1759907007217407,Accuracy = 0.6286458373069763
+n too long before the work an
+[2017-11-28 19:38] Train Step 23201/25000, Batch Size = 64, Examples/Sec = 1346.80, Loss = 1.0577890872955322,Accuracy = 0.6708333492279053
+CINT MAN AND HIS GRANDSON
+
+Th
+[2017-11-28 19:38] Train Step 23301/25000, Batch Size = 64, Examples/Sec = 1343.21, Loss = 1.0422502756118774,Accuracy = 0.6703125238418579
+udged about the third day, an
+[2017-11-28 19:38] Train Step 23401/25000, Batch Size = 64, Examples/Sec = 1326.52, Loss = 1.0656613111495972,Accuracy = 0.660937488079071
+onically, and said, ‘What a b
+[2017-11-28 19:38] Train Step 23501/25000, Batch Size = 64, Examples/Sec = 1352.27, Loss = 1.0487302541732788,Accuracy = 0.676562488079071
+ and the good grain in the mo
+[2017-11-28 19:38] Train Step 23601/25000, Batch Size = 64, Examples/Sec = 1317.75, Loss = 1.0647748708724976,Accuracy = 0.6697916388511658
+nest when the wild beast was 
+[2017-11-28 19:38] Train Step 23701/25000, Batch Size = 64, Examples/Sec = 1349.97, Loss = 1.056523084640503,Accuracy = 0.6744791865348816
+ THE BIRD
+
+There was once a m
+[2017-11-28 19:38] Train Step 23801/25000, Batch Size = 64, Examples/Sec = 1350.57, Loss = 1.0887675285339355,Accuracy = 0.6557291746139526
+ Edinch or any other will be 
+[2017-11-28 19:38] Train Step 23901/25000, Batch Size = 64, Examples/Sec = 1341.94, Loss = 1.1232787370681763,Accuracy = 0.6411458253860474
+ou have seen no one could not
+[2017-11-28 19:38] Train Step 24001/25000, Batch Size = 64, Examples/Sec = 1343.39, Loss = 1.1184991598129272,Accuracy = 0.6526041626930237
+ansel and Gretel came to the 
+[2017-11-28 19:38] Train Step 24101/25000, Batch Size = 64, Examples/Sec = 1350.72, Loss = 1.0684908628463745,Accuracy = 0.6635416746139526
+ and said: ‘I will give you a
+[2017-11-28 19:39] Train Step 24201/25000, Batch Size = 64, Examples/Sec = 1344.39, Loss = 1.0882459878921509,Accuracy = 0.6421874761581421
+ng the stream, and the soldie
+[2017-11-28 19:39] Train Step 24301/25000, Batch Size = 64, Examples/Sec = 1343.57, Loss = 1.1080422401428223,Accuracy = 0.653124988079071
+ WAS
+     THE STRAW, THE COAL
+[2017-11-28 19:39] Train Step 24401/25000, Batch Size = 64, Examples/Sec = 1337.23, Loss = 1.1222293376922607,Accuracy = 0.6541666388511658
+ so much that she had served 
+[2017-11-28 19:39] Train Step 24501/25000, Batch Size = 64, Examples/Sec = 1345.66, Loss = 1.1052734851837158,Accuracy = 0.6583333611488342
+ut when he had said to himsel
+[2017-11-28 19:39] Train Step 24601/25000, Batch Size = 64, Examples/Sec = 1340.41, Loss = 1.0786670446395874,Accuracy = 0.6640625
+S
+
+The miller’s house in the 
+[2017-11-28 19:39] Train Step 24701/25000, Batch Size = 64, Examples/Sec = 1343.12, Loss = 1.1275743246078491,Accuracy = 0.6526041626930237
+reamer went on the stream. ‘W
+[2017-11-28 19:39] Train Step 24801/25000, Batch Size = 64, Examples/Sec = 1347.37, Loss = 1.0618544816970825,Accuracy = 0.6604166626930237
+ was all about the sea!
+  Hea
+[2017-11-28 19:39] Train Step 24901/25000, Batch Size = 64, Examples/Sec = 1332.68, Loss = 1.0711158514022827,Accuracy = 0.6541666388511658
+ENTILTL NOT BE LITTLE TAILOR
+

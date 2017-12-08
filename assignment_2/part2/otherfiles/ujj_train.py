@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 26 12:31:32 2017
+
+@author: anand
+"""
+
 # MIT License
 #
 # Copyright (c) 2017 Tom Runia
@@ -25,7 +33,7 @@ import numpy as np
 import tensorflow as tf
 
 from dataset import TextDataset
-from model import TextGenerationModel
+from ujj_model import TextGenerationModel
 
 
 def train(config):
@@ -42,51 +50,49 @@ def train(config):
         lstm_num_layers=config.lstm_num_layers
     )
 
-    initial_state = tf.placeholder(shape=[config.lstm_num_layers,2,None,config.lstm_num_hidden],dtype=tf.float32)
-    x = tf.placeholder(shape=[None,None],dtype=tf.int32)
-    y = tf.placeholder(shape=[None,None],dtype=tf.int32)
- 
-    vocab_size = dataset.vocab_size
-    em_matrix =  tf.get_variable("embedding", [vocab_size, vocab_size],initializer = tf.initializers.identity) # tf.eye(dataset.vocab_size)
-    inputs = tf.nn.embedding_lookup(em_matrix, x)
-    print ("input shape={}".format(inputs.get_shape().as_list()))
-    
-    probabilities,logits,n_states,loss,accuracy = model.probabilities(inputs,y,initial_state)
-    prediction = model.predictions(probabilities)
+    ###########################################################################
+    # Implement code here.
+    ###########################################################################
 
+    X = tf.placeholder(dtype = tf.float32, shape = [config.batch_size, config.seq_length],name='inputs')
+    Y = tf.placeholder(dtype = tf.int32, shape = [config.batch_size, config.seq_length],name='targets')
+    Xp = tf.placeholder(dtype = tf.float32, shape = [None, None],name='inputs2')
+    embedding_matrix = tf.eye(dataset.vocab_size)
+    x_ohe = tf.nn.embedding_lookup(embedding_matrix,tf.cast(X,tf.int32))
+    inputs = tf.nn.embedding_lookup(embedding_matrix,tf.cast(Xp,tf.int32))
+    print (x_ohe.get_shape().as_list())
+    probabilities, loss = model.probabilities(x_ohe,Y)
+    predictions = model.predictions(inputs)
 
     # Define the optimizer
     optimizer = tf.train.RMSPropOptimizer(config.learning_rate)
+    global_step = tf.Variable(0, name='global_step', trainable=False)
 
     # Compute the gradients for each variable
     grads_and_vars = optimizer.compute_gradients(loss)
-    global_step = tf.Variable(0,trainable=False)
     #train_op = optimizer.apply_gradients(grads_and_vars, global_step)
     grads, variables = zip(*grads_and_vars)
     grads_clipped, _ = tf.clip_by_global_norm(grads, clip_norm=config.max_norm_gradient)
     apply_gradients_op = optimizer.apply_gradients(zip(grads_clipped, variables), global_step=global_step)
 
-
-    #saver = tf.train.Saver()
+    ###########################################################################
+    # Implement code here.
+    ###########################################################################
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
-    summary_f = tf.summary.FileWriter(config.summary_path,sess.graph)
-    s_acc_train = tf.summary.scalar('training_acc',accuracy)
-    s_loss_train = tf.summary.scalar('train_loss',loss)
 
     for train_step in range(int(config.train_steps)):
-        xt,yt = dataset.batch(config.batch_size, config.seq_length)        
-
+        # Retreive training data batch
+        batch_train, batch_target = dataset.batch(config.batch_size, config.seq_length)
         # Only for time measurement of step through network
-        t1 = time.time()  
+        t1 = time.time()
 
+        _, lossval = sess.run([apply_gradients_op,loss],
+                                feed_dict={X: batch_train, Y: batch_target})
 
-        # sess.run ( .. )
-        _,ls,acc,sltr,satr = sess.run([apply_gradients_op,loss,accuracy,s_loss_train,s_acc_train],
-                              feed_dict={x:xt,y:yt,initial_state:np.zeros((config.lstm_num_layers,2,
-                                                                           config.batch_size,config.lstm_num_hidden))})
-        summary_f.add_summary(sltr,train_step)
-        summary_f.add_summary(satr,train_step)
+        #######################################################################
+        # Implement code here.
+        #######################################################################
 
         # Only for time measurement of step through network
         t2 = time.time()
@@ -94,23 +100,26 @@ def train(config):
 
         # Output the training progress
         if train_step % config.print_every == 0:
-            print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, Examples/Sec = {:.2f}, Loss = {},Accuracy = {}"
-                  .format(
+            print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, Examples/Sec = {:.2f}, Loss = {}".format(
                 datetime.now().strftime("%Y-%m-%d %H:%M"), train_step+1,
-                int(config.train_steps), config.batch_size, examples_per_second,ls,acc
+                int(config.train_steps), config.batch_size, examples_per_second, lossval
             ))
+            #print(dataset.convert_to_string(batch_target[0]))
+            #print(pred[0])
+            #print(dataset.convert_to_string(pred[0]))
             
         if(train_step%int(config.sample_every)==0):
             start = np.random.choice(np.arange(dataset.vocab_size),size=1)
-            start2 = np.reshape(start,(1,1))
-            sent = []
-            state = np.zeros((config.lstm_num_layers,2,1,config.lstm_num_hidden))
-            for i in range(1,60):
-                pred,state = sess.run([prediction,n_states],feed_dict={x:start2,initial_state:state})
-                sent.append(pred[0])
-                start2[0] = pred
-            print("Sentence:{}".format(dataset.convert_to_string(sent)))
-              
+            holder = []
+            xv = [start]
+            #for i in range(1,config.seq_length):
+            holder.append(xv[0][0])
+            while(len(holder)<=30):                
+                pred = sess.run([predictions],feed_dict={Xp:xv})
+                xv = pred
+                holder.append(xv[0][0])
+            print(holder)
+            print(dataset.convert_to_string(holder))
 
 
 if __name__ == "__main__":
@@ -119,7 +128,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Model params
-    parser.add_argument('--txt_file', type=str,default="./books/book_NL_darwin_reis_om_de_wereld.txt", help="Path to a .txt file to train on")
+    #parser.add_argument('--txt_file', type=str, required=True, help="Path to a .txt file to train on")
+
+    # REMOVE THIS IN THE FINAL VERSION AND UNCOMMENT ABOVE. ONLY TO TEST.
+    parser.add_argument('--txt_file', type=str, default = "./books/book_EN_grimms_fairy_tails.txt", help="Path to a .txt file to train on")
+
     parser.add_argument('--seq_length', type=int, default=30, help='Length of an input sequence')
     parser.add_argument('--lstm_num_hidden', type=int, default=128, help='Number of hidden units in the LSTM')
     parser.add_argument('--lstm_num_layers', type=int, default=2, help='Number of LSTM layers in the model')
@@ -131,16 +144,17 @@ if __name__ == "__main__":
     parser.add_argument('--learning_rate_step', type=int, default=5000, help='Learning rate step')
 
     parser.add_argument('--dropout_keep_prob', type=float, default=1.0, help='Dropout keep probability')
-    parser.add_argument('--train_steps', type=int, default=15000, help='Number of training steps')
+    parser.add_argument('--train_steps', type=int, default=1e6, help='Number of training steps')
     parser.add_argument('--max_norm_gradient', type=float, default=5.0, help='--')
 
     # Misc params
     parser.add_argument('--gpu_mem_frac', type=float, default=0.5, help='Fraction of GPU memory to allocate')
     parser.add_argument('--log_device_placement', type=bool, default=False, help='Log device placement for debugging')
     parser.add_argument('--summary_path', type=str, default="./summaries/", help='Output path for summaries')
-    parser.add_argument('--print_every', type=int, default=100, help='How often to print training progress')
+    parser.add_argument('--print_every', type=int, default=50, help='How often to print training progress')
     parser.add_argument('--sample_every', type=int, default=100, help='How often to sample from the model')
 
     config = parser.parse_args()
+
     # Train the model
     train(config)
