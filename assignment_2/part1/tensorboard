@@ -1,0 +1,4 @@
+tensorboard --logdir=lstm5:./LSTM5,lstm10:./LSTM10,lstm15:./LSTM15,lstm20:./LSTM20,lstm30:./LSTM30
+
+tensorboard --logdir=rnn5:./RNN5,rnn10:./RNN10,rnn15:./RNN15,rnn20:./RNN20,rnn30:./RNN30
+

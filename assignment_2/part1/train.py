@@ -41,21 +41,27 @@ def train(config):
             config.input_length, config.input_dim, config.num_hidden,
             config.num_classes, config.batch_size
         )
+        init_state = tf.placeholder(shape=[None, config.num_hidden],
+                                dtype=tf.float32, name='initial_state')
+        
+        state = np.zeros([config.batch_size,config.num_hidden])
     else:
         print("Initializing LSTM model...")
         model = LSTM(
             config.input_length, config.input_dim, config.num_hidden,
             config.num_classes, config.batch_size
         )
+        init_state = tf.placeholder(shape=[2,None, config.num_hidden],
+                                dtype=tf.float32, name='initial_state')
+        
+        state = np.zeros([2,config.batch_size,config.num_hidden])
 
     ###########################################################################
     # Implement code here.
     ###########################################################################
     x = tf.placeholder(shape=[None,None,config.input_dim], dtype=tf.float32)
     y = tf.placeholder(shape=[None], dtype=tf.int32)
-    init_state = tf.placeholder(shape=[None, config.num_hidden],
-                                dtype=tf.float32, name='initial_state')
-
+    
     # Define the optimizer
     optimizer = tf.train.RMSPropOptimizer(config.learning_rate)
     logits = model.compute_logits(x,init_state)
@@ -82,6 +88,10 @@ def train(config):
     ###########################################################################
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
+    summary_f = tf.summary.FileWriter(config.summary_path,sess.graph)
+    s_acc_train = tf.summary.scalar('training_acc',accuracy)
+    s_loss_train = tf.summary.scalar('train_loss',loss)
+    s_logits = tf.summary.histogram('logits',logits)
         
     for train_step in range(config.train_steps):
         palindrome = utils.generate_palindrome_batch(config.batch_size,config.input_length)
@@ -93,8 +103,12 @@ def train(config):
         t1 = time.time()
 
         # sess.run ( ... )
-        opt,ls,acc = sess.run([apply_gradients_op,loss,accuracy],
-                              feed_dict={x:xt,y:yt,init_state : np.zeros([config.batch_size,config.num_hidden])})
+        opt,ls,acc,sltr,satr,slog = sess.run([apply_gradients_op,loss,accuracy,s_loss_train,s_acc_train,s_logits],
+                              feed_dict={x:xt,y:yt,init_state:state})
+        
+        summary_f.add_summary(sltr,train_step)
+        summary_f.add_summary(satr,train_step)
+        summary_f.add_summary(slog,train_step)
         
 
         # Only for time measurement of step through network
@@ -106,7 +120,7 @@ def train(config):
             print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, "
                   "Examples/Sec = {:.2f}, Accuracy = {}, Loss = {}".format(
                 datetime.now().strftime("%Y-%m-%d %H:%M"), train_step,
-                config.train_steps, config.batch_size, examples_per_second,acc,loss
+                config.train_steps, config.batch_size, examples_per_second,acc,ls
             ))
 
 
@@ -117,7 +131,7 @@ if __name__ == "__main__":
 
     # Model params
     parser.add_argument('--model_type', type=str, default="RNN", help="Model type, should be 'RNN' or 'LSTM'")
-    parser.add_argument('--input_length', type=int, default=5, help='Length of an input sequence')
+    parser.add_argument('--input_length', type=int, default=30, help='Length of an input sequence')
     parser.add_argument('--input_dim', type=int, default=1, help='Dimensionality of input sequence')
     parser.add_argument('--num_classes', type=int, default=10, help='Dimensionality of output sequence')
     parser.add_argument('--num_hidden', type=int, default=128, help='Number of hidden units in the model')
